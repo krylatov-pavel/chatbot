@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { storeState } from '../redux/storeConfiguration';
 import { fetchBots } from '../redux/actionCreators/bots';
 import BotLink from './BotLink';
@@ -34,4 +35,4 @@ const actions = {
     fetchBots
 };
 
-export default connect(mapStateToProps, actions)(BotsList);
+export default withRouter(connect(mapStateToProps, actions)(BotsList));
