@@ -20,7 +20,7 @@ class BotsList extends Component {
         } else {
             const list = bots.map(bot => <BotLink key={bot.id} bot={bot} onSelect={() => console.log(bot.id)} />);
 
-            return (<ul>{list}</ul>);
+            return (<ul className="list-group">{list}</ul>);
         }
     }
 }

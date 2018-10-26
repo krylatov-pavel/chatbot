@@ -14,15 +14,15 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <BrowserRouter>
-                        <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
-                            <div className="col=12 col-md-3">
+                            <nav className="col=12 col-md-3 bg-faded sidebar">
                                 <BotsList />
-                            </div>
-                            <div className="col-12 col-md-9">
+                            </nav>
+                            <main className="col-12 col-md-9 offset-md-3">
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/chat/:botId" component={Chat} />
-                            </div>
+                            </main>
                         </div>
                     </div>
                 </BrowserRouter>

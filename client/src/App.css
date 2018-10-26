@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+}
+
+.bg-faded {
+    background-color: #f7f7f7;
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+.bot-link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+    .bot-link:hover, .active > .bot-link {
+        background: #f0f0f0;
+        text-decoration: none;
+    }
+
+.avatar-sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
