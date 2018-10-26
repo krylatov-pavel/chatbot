@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import MessageBox from './MessageBox';
+import { sendMessage } from '../redux/actionCreators/conversations';
 
 class Chat extends Component {
     render() {
-        return (<p>Bot ID: {this.props.botId}</p>);
+        const {botId, sendMessage} = this.props;
+
+        return (<div>
+            <p>Bot ID: {botId}</p>
+            <MessageBox onSend={(message) => sendMessage(botId, message, null)} />
+            </div>);
     }
 }
 
@@ -12,4 +19,8 @@ const mapStateToProps = (state, ownProps) => ({
     botId: ownProps.match.params.botId
 });
 
-export default withRouter(connect(mapStateToProps, null)(Chat));
+const actionsMap = {
+    sendMessage
+}
+
+export default withRouter(connect(mapStateToProps, actionsMap)(Chat));

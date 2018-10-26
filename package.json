@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && npm run start",
-    "server": "nodemon ./server/server.js",
-    "dev": "npm run client"
+    "server": "json-server --watch ./server/db.json --port 4000",
+    "dev":  "concurrently --kill-others \"npm run client\" \"npm run server\""
   },
   "dependencies": {
     "express": "^4.16.2"

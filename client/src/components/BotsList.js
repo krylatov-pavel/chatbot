@@ -31,8 +31,8 @@ const mapStateToProps = (state) => ({
     error: storeState.bots.getErrorMessage(state)
 });
 
-const actions = {
+const actionsMap = {
     fetchBots
 };
 
-export default withRouter(connect(mapStateToProps, actions)(BotsList));
+export default withRouter(connect(mapStateToProps, actionsMap)(BotsList));

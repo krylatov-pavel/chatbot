@@ -1,0 +1,31 @@
+{
+  "bots": [],
+  "conversations": [
+    {
+      "botId": "165",
+      "id": "7431132817723025314",
+      "date": "2018-10-26T15:59:58.325Z"
+    }
+  ],
+  "exchanges": [
+    {
+      "conversationId": "7431132817723025314",
+      "request": {
+        "text": "Hello Brian!",
+        "date": "2018-10-26T15:59:57.687Z"
+      },
+      "response": {
+        "message": "Hi.",
+        "conversation": "7431132817723025314",
+        "emote": "NONE",
+        "avatar": "media/a22503795.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-26T15:59:58.664Z"
+      },
+      "id": 1
+    }
+  ]
+}
