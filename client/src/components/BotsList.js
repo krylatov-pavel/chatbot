@@ -27,8 +27,8 @@ class BotsList extends Component {
 
 const mapStateToProps = (state) => ({
     bots: storeState.bots.getList(state),
-    isFetching: storeState.bots.getIsFetching(state),
-    error: storeState.bots.getErrorMessage(state)
+    isFetching: storeState.ui.bots.getIsFetching(state),
+    error: storeState.ui.bots.getErrorMessage(state)
 });
 
 const actionsMap = {

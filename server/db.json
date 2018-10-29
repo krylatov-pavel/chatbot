@@ -5,6 +5,101 @@
       "botId": "165",
       "id": "7431132817723025314",
       "date": "2018-10-26T15:59:58.325Z"
+    },
+    {
+      "botId": "667676",
+      "id": "5647946406325879483",
+      "date": "2018-10-29T13:02:06.256Z"
+    },
+    {
+      "botId": "165",
+      "id": "4807026353359668921",
+      "date": "2018-10-29T13:04:20.681Z"
+    },
+    {
+      "botId": "165",
+      "id": "2262647287679001816",
+      "date": "2018-10-29T19:53:50.836Z"
+    },
+    {
+      "botId": "165",
+      "id": "2676045161184731530",
+      "date": "2018-10-29T20:02:44.964Z"
+    },
+    {
+      "botId": "165",
+      "id": "2675760655056041009",
+      "date": "2018-10-29T20:10:41.180Z"
+    },
+    {
+      "botId": "165",
+      "id": "4622091508599391388",
+      "date": "2018-10-29T20:13:07.928Z"
+    },
+    {
+      "botId": "165",
+      "id": "7354837245766412652",
+      "date": "2018-10-29T20:14:44.726Z"
+    },
+    {
+      "botId": "165",
+      "id": "7677271871099588762",
+      "date": "2018-10-29T20:45:24.012Z"
+    },
+    {
+      "botId": "165",
+      "id": "5206788880667641575",
+      "date": "2018-10-29T20:47:11.818Z"
+    },
+    {
+      "botId": "165",
+      "id": "7368932555589508545",
+      "date": "2018-10-29T20:48:36.717Z"
+    },
+    {
+      "botId": "165",
+      "id": "733490666916597028",
+      "date": "2018-10-29T20:54:19.584Z"
+    },
+    {
+      "botId": "165",
+      "id": "1763441365890088935",
+      "date": "2018-10-29T20:57:54.462Z"
+    },
+    {
+      "botId": "165",
+      "id": "4902750379955583712",
+      "date": "2018-10-29T20:59:16.464Z"
+    },
+    {
+      "botId": "165",
+      "id": "4558900481500039575",
+      "date": "2018-10-29T21:02:21.214Z"
+    },
+    {
+      "botId": "165",
+      "id": "1725623071476118540",
+      "date": "2018-10-29T21:08:21.099Z"
+    },
+    {
+      "botId": "165",
+      "id": "1166427150689827578",
+      "date": "2018-10-29T21:09:19.024Z"
+    },
+    {
+      "botId": "165",
+      "id": "3493542362371555071",
+      "date": "2018-10-29T21:10:20.543Z"
+    },
+    {
+      "botId": "667676",
+      "id": "2422999635806398784",
+      "date": "2018-10-29T21:10:34.803Z"
+    },
+    {
+      "botId": "667676",
+      "id": "5531083715415234823",
+      "date": "2018-10-29T21:10:59.511Z"
     }
   ],
   "exchanges": [
@@ -26,6 +121,367 @@
         "date": "2018-10-26T15:59:58.664Z"
       },
       "id": 1
+    },
+    {
+      "conversationId": "5647946406325879483",
+      "request": {
+        "text": "Hi Julie!",
+        "date": "2018-10-29T13:02:05.529Z"
+      },
+      "response": {
+        "message": "Yes? That's my name.",
+        "conversation": "5647946406325879483",
+        "emote": "LIKE",
+        "avatar": "media/a14771000.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-29T13:02:07.854Z"
+      },
+      "id": 2
+    },
+    {
+      "conversationId": "4807026353359668921",
+      "request": {
+        "text": "hi brian!\n",
+        "date": "2018-10-29T13:04:20.074Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "4807026353359668921",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T13:04:21.005Z"
+      },
+      "id": 3
+    },
+    {
+      "conversationId": "2262647287679001816",
+      "request": {
+        "text": "hi Brain!\n",
+        "date": "2018-10-29T19:53:49.576Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "2262647287679001816",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T19:53:53.908Z"
+      },
+      "id": 4
+    },
+    {
+      "conversationId": "2676045161184731530",
+      "request": {
+        "text": "Hi Brain!",
+        "date": "2018-10-29T20:02:44.390Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "2676045161184731530",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:02:45.300Z"
+      },
+      "id": 5
+    },
+    {
+      "conversationId": "2675760655056041009",
+      "request": {
+        "text": "Hi Brain!\n",
+        "date": "2018-10-29T20:10:40.211Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "2675760655056041009",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:10:41.528Z"
+      },
+      "id": 6
+    },
+    {
+      "conversationId": "4622091508599391388",
+      "request": {
+        "text": "Hi Brain!",
+        "date": "2018-10-29T20:12:25.389Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "4622091508599391388",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:13:08.269Z"
+      },
+      "id": 7
+    },
+    {
+      "conversationId": "7354837245766412652",
+      "request": {
+        "text": "hi Brain!",
+        "date": "2018-10-29T20:14:27.357Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "7354837245766412652",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:14:45.063Z"
+      },
+      "id": 8
+    },
+    {
+      "conversationId": "7677271871099588762",
+      "request": {
+        "text": "aasdf",
+        "date": "2018-10-29T20:45:23.283Z"
+      },
+      "response": {
+        "message": "Would you like to play I Spy with me?",
+        "conversation": "7677271871099588762",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:45:24.342Z"
+      },
+      "id": 9
+    },
+    {
+      "conversationId": "5206788880667641575",
+      "request": {
+        "text": "asd",
+        "date": "2018-10-29T20:47:11.397Z"
+      },
+      "response": {
+        "message": "I am 2 years old, I do not have a gender, I am Brain Bot.",
+        "conversation": "5206788880667641575",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:47:12.131Z"
+      },
+      "id": 10
+    },
+    {
+      "conversationId": "7368932555589508545",
+      "request": {
+        "text": "hi Brain!",
+        "date": "2018-10-29T20:48:36.306Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "7368932555589508545",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:48:37.056Z"
+      },
+      "id": 11
+    },
+    {
+      "conversationId": "733490666916597028",
+      "request": {
+        "text": "dhf",
+        "date": "2018-10-29T20:54:19.081Z"
+      },
+      "response": {
+        "message": "Would you like to play I Spy with me?",
+        "conversation": "733490666916597028",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:54:19.913Z"
+      },
+      "id": 12
+    },
+    {
+      "conversationId": "1763441365890088935",
+      "request": {
+        "text": "as",
+        "date": "2018-10-29T20:57:53.906Z"
+      },
+      "response": {
+        "message": "Would you like to play I Spy with me?",
+        "conversation": "1763441365890088935",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:57:54.790Z"
+      },
+      "id": 13
+    },
+    {
+      "conversationId": "4902750379955583712",
+      "request": {
+        "text": "asd",
+        "date": "2018-10-29T20:59:16.065Z"
+      },
+      "response": {
+        "message": "I am 2 years old, I do not have a gender, I am Brain Bot.",
+        "conversation": "4902750379955583712",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T20:59:16.791Z"
+      },
+      "id": 14
+    },
+    {
+      "conversationId": "4558900481500039575",
+      "request": {
+        "text": "as",
+        "date": "2018-10-29T21:02:20.794Z"
+      },
+      "response": {
+        "message": "Would you like to play I Spy with me?",
+        "conversation": "4558900481500039575",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T21:02:21.531Z"
+      },
+      "id": 15
+    },
+    {
+      "conversationId": "1725623071476118540",
+      "request": {
+        "text": "as",
+        "date": "2018-10-29T21:08:19.872Z"
+      },
+      "response": {
+        "message": "Would you like to play I Spy with me?",
+        "conversation": "1725623071476118540",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T21:08:21.433Z"
+      },
+      "id": 16
+    },
+    {
+      "conversationId": "1166427150689827578",
+      "request": {
+        "text": "Hi Brain!",
+        "date": "2018-10-29T21:09:18.509Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "1166427150689827578",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T21:09:19.353Z"
+      },
+      "id": 17
+    },
+    {
+      "conversationId": "3493542362371555071",
+      "request": {
+        "text": "Hello! what is your name?",
+        "date": "2018-10-29T21:10:19.773Z"
+      },
+      "response": {
+        "message": "My name is Brain Bot.",
+        "conversation": "3493542362371555071",
+        "emote": "ECSTATIC",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-10-29T21:10:20.870Z"
+      },
+      "id": 18
+    },
+    {
+      "conversationId": "2422999635806398784",
+      "request": {
+        "text": "Hey pretty face",
+        "date": "2018-10-29T21:10:34.516Z"
+      },
+      "response": {
+        "message": "I understand, Hey pretty face.",
+        "conversation": "2422999635806398784",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-29T21:10:35.118Z"
+      },
+      "id": 19
+    },
+    {
+      "conversationId": "5531083715415234823",
+      "request": {
+        "text": "How are you?",
+        "date": "2018-10-29T21:10:59.085Z"
+      },
+      "response": {
+        "message": "Fine",
+        "conversation": "5531083715415234823",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-29T21:10:59.847Z"
+      },
+      "id": 20
     }
   ]
 }

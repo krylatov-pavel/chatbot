@@ -1,14 +1,5 @@
 import { combineReducers } from 'redux';
-import * as ActionType from '../actionTypes';
-
-const list = (state = [], action) => {
-    switch (action.type) {
-        case ActionType.FETCH_BOTS_SUCCESS:
-            return [...action.payload];
-        default:
-            return state;
-    }
-};
+import * as ActionType from '../../actionTypes';
 
 const isFetching = (state = false, action) => {
     switch (action.type) {
@@ -34,14 +25,12 @@ const errorMessage = (state = null, action) => {
     }
 };
 
-const bots = combineReducers({
-    list,
+export const botsList = combineReducers({
     isFetching,
     errorMessage
 });
 
-export default bots;
+export default botsList;
 
-export const getList = (state) => state.list;
 export const getIsFetching = (state) => state.isFetching;
 export const getErrorMessage = (state) => state.errorMessage;

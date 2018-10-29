@@ -10,7 +10,8 @@ export const sendMessage = (botId, message, conversationId = null) => (dispatch)
         .then(
         exchange => dispatch({
             type: ActionType.SEND_MESSAGE_SUCCESS,
-            payload: exchange
+            botId,
+            exchange
         }),
         error => dispatch({
             type: ActionType.SEND_MESSAGE_FAILURE,
