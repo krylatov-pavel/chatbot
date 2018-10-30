@@ -3,7 +3,8 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import bots, * as botsState from './reducers/entities/bots';
 import exchanges, * as exchangesState from './reducers/entities/exchanges';
-import botsUI, * as botsUIState from './reducers/ui/botsList';
+import createApiInteraction, * as apiInterationState from './reducers/ui/createApiInteractions';
+import * as ActionType from './actionTypes';
 
 export const configureStore = () => {
     const middleware = [thunk, logger];
@@ -13,7 +14,15 @@ export const configureStore = () => {
             bots,
             exchanges,
             ui: combineReducers({
-                botsUI
+                bots: createApiInteraction(ActionType.FETCH_BOTS_REQUEST,
+                    ActionType.FETCH_BOTS_SUCCESS,
+                    ActionType.FETCH_BOTS_FAILURE),
+                exchanges: createApiInteraction(ActionType.FETCH_EXCHANGES_REQUEST,
+                    ActionType.FETCH_EXCHANGES_SUCCESS,
+                    ActionType.FETCH_EXCHANGES_FAILURE),
+                message: createApiInteraction(ActionType.SEND_MESSAGE_REQUEST,
+                    ActionType.SEND_MESSAGE_SUCCESS,
+                    ActionType.SEND_MESSAGE_FAILURE)
             })
         }),
         applyMiddleware(...middleware)
@@ -22,16 +31,25 @@ export const configureStore = () => {
 
 export const storeState = {
     bots: {
-        getList: state => botsState.getList(state.bots)
+        getList: state => botsState.getList(state.bots),
+        getConversationId: (state, botId) => botsState.getActiveConversationId(state.bots, botId)
     },
     exchanges: {
         getAll: (state, botId) => botsState.getExchangesIds(state.bots, botId)
-            .map(id => exchangesState.getExchange(state.exchanges, id))
+            .map(id => exchangesState.getExchange(state.exchanges, id)),
     },
     ui: {
         bots: {
-            getIsFetching: state => botsUIState.getIsFetching(state.ui.botsUI),
-            getErrorMessage: state => botsUIState.getErrorMessage(state.ui.botsUI)
+            getIsFetching: state => apiInterationState.getIsFetching(state.ui.bots),
+            getErrorMessage: state => apiInterationState.getErrorMessage(state.ui.bots)
+        },
+        exchanges: {
+            getIsFetching: state => apiInterationState.getIsFetching(state.ui.exchanges),
+            getErrorMessage: state => apiInterationState.getErrorMessage(state.ui.exchanges)
+        },
+        message: {
+            getIsSending: state => apiInterationState.getIsFetching(state.ui.message),
+            getErrorMessage: state => apiInterationState.getErrorMessage(state.ui.message)
         }
     }
 };

@@ -1,12 +1,6 @@
 import { botApi, localApi, applicationID } from '../config';
 import { handleResponse, handleResponseError } from './utils';
 
-export const sendMessage = (botId, message, conversationId = null) => {
-    return requestBot(botId, conversationId, message)
-        .then(exchange => createConversationIfNotExist(!!conversationId, botId, exchange))
-        .then(({request, response}) => saveExchange(conversationId, request, response));
-};
-
 const requestBot = (botId, conversationId, message) => {
     const date = new Date().toISOString();
     const body = {
@@ -36,8 +30,9 @@ const requestBot = (botId, conversationId, message) => {
         }));
 };
 
-const saveExchange = (conversationId, request, response) => {
+const saveExchange = (botId, conversationId, request, response) => {
     const body = {
+        botId,
         conversationId: conversationId || response.conversation,
         request,
         response: {
@@ -56,24 +51,12 @@ const saveExchange = (conversationId, request, response) => {
         .then(handleResponse, handleResponseError);
 }
 
-const createConversationIfNotExist = (isExist, botId, exchange) => {
-    if (isExist) {
-        return Promise.resolve(exchange);
-    } else {
-        const body = {
-            botId: botId,
-            id: exchange.response.conversation,
-            date: new Date().toISOString()
-        }
-
-        return fetch(`${localApi}conversations`, {
-            method: 'POST',
-            body: JSON.stringify(body),
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-            .then(handleResponse, handleResponseError)
-            .then(() => exchange);
-    }
+export const sendMessage = (botId, message, conversationId = null) => {
+    return requestBot(botId, conversationId, message)
+        .then(({request, response}) => saveExchange(botId, conversationId, request, response));
 };
+
+export const fetchExchanges = (botId) => {
+    const url = `${localApi}bots\\${botId}\\exchanges?_sort=request.date&_order=asc`;
+    return fetch(url).then(handleResponse, handleResponseError);
+}

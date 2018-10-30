@@ -17,3 +17,5 @@ const store = {
         }
     }
 }
+
+//TO DO: make sure that API always return same model shape
