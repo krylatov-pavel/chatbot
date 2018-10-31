@@ -1,3 +1,7 @@
+.full-heigth {
+    height: 100%;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -35,3 +39,53 @@ a.no-underline {
     height: 50px;
     border-radius: 50%;
 }
+
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-content {
+    flex: 1;
+    overflow: auto;
+    margin: 20px 0;
+}
+
+.exchange {
+    display: flex;
+    flex-direction: column;
+}
+
+    .exchange .from {
+        align-self: flex-start;
+        margin-right: 30px;
+    }
+
+    .exchange .to {
+        align-self: flex-end;
+        margin-left: 30px;
+    }
+
+    .exchange .message {
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+
+    .exchange .from .message {
+        background-color: #f7f7f7;
+    }
+
+    .exchange .to .message {
+        background-color: #d9effc;
+    }
+
+    .exchange .message-metadata {
+        display: block;
+        font-size: 80%;
+        color: darkgrey;
+    }
+
+    .exchange .to .message-metadata {
+        text-align: right;
+    }

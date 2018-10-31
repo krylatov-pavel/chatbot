@@ -32,7 +32,8 @@ export const configureStore = () => {
 export const storeState = {
     bots: {
         getList: state => botsState.getList(state.bots),
-        getConversationId: (state, botId) => botsState.getActiveConversationId(state.bots, botId)
+        getConversationId: (state, botId) => botsState.getActiveConversationId(state.bots, botId),
+        getData: (state, botId) => botsState.getData(state.bots, botId)
     },
     exchanges: {
         getAll: (state, botId) => botsState.getExchangesIds(state.bots, botId)

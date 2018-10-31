@@ -25,6 +25,7 @@ class MessageBox extends Component {
                 </div>
                 <div className="form-group">
                     <button type="submit" className="btn btn-light float-right">Send</button>
+                    <div className="clearfix"></div>
                 </div>
             </LocalForm>
         );

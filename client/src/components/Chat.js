@@ -24,24 +24,28 @@ class Chat extends Component {
     }
 
     render() {
-        const { botId, exchanges, sendMessage, conversationId } = this.props;
+        const { botId, exchanges, sendMessage, conversationId, botName } = this.props;
 
-        return (<div>
-            <p>Bot ID: {botId}</p>
-            <p>ConversationID: {conversationId}</p>
-            <Conversation exchanges={exchanges} />
-            <MessageBox onSend={(message) => sendMessage(botId, message, conversationId)} />
+        return (<div className="chat-container">
+            <div className="chat-content">
+                <Conversation exchanges={exchanges} botName={botName} />
+            </div>
+            <div>
+                <MessageBox onSend={(message) => sendMessage(botId, message, conversationId)} />
+            </div>
         </div>);
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
     const { botId } = ownProps.match.params;
+    const botData = storeState.bots.getData(state, botId);
 
     return {
         exchanges: storeState.exchanges.getAll(state, botId),
         conversationId: storeState.bots.getConversationId(state, botId),
         botId,
+        botName: botData ? botData.name : null
     };
 };
 

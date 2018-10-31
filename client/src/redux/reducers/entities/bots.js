@@ -77,3 +77,4 @@ export default combineReducers({
 export const getList = (state) => state.allIds.map(id => state.byId[id].data);
 export const getExchangesIds = (state, botId) => state.byId[botId] ? state.byId[botId].exchanges : [];
 export const getActiveConversationId = (state, botId) => state.byId[botId] ? state.byId[botId].activeConversationId : null;
+export const getData = (state, botId) => state.byId[botId] ? state.byId[botId].data : null;

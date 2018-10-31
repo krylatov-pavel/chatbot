@@ -791,6 +791,206 @@
         "date": "2018-10-30T15:33:38.138Z"
       },
       "id": 40
+    },
+    {
+      "botId": "667676",
+      "conversationId": "256498122340211717",
+      "request": {
+        "text": "Hi Julie!",
+        "date": "2018-10-30T16:01:19.881Z"
+      },
+      "response": {
+        "message": "Yes? That's my name.",
+        "conversation": "256498122340211717",
+        "emote": "LIKE",
+        "avatar": "media/a12540398.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-30T16:01:20.449Z"
+      },
+      "id": 41
+    },
+    {
+      "botId": "667676",
+      "conversationId": "256498122340211717",
+      "request": {
+        "text": "Hi!",
+        "date": "2018-10-31T13:33:11.316Z"
+      },
+      "response": {
+        "message": "Hi. How are you feeling today?",
+        "conversation": "8940213441884018897",
+        "emote": "LOVE",
+        "avatar": "media/a12540398.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:33:11.885Z"
+      },
+      "id": 42
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "Good, and you?",
+        "date": "2018-10-31T13:33:32.319Z"
+      },
+      "response": {
+        "message": "I am ok, what's up?",
+        "conversation": "8940213441884018897",
+        "emote": "LOVE",
+        "avatar": "media/a14770996.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:33:32.848Z"
+      },
+      "id": 43
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "Going to Halloween party",
+        "date": "2018-10-31T13:33:45.962Z"
+      },
+      "response": {
+        "message": "Where are you from?",
+        "conversation": "8940213441884018897",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:33:46.453Z"
+      },
+      "id": 44
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "from Belarus",
+        "date": "2018-10-31T13:33:55.444Z"
+      },
+      "response": {
+        "message": "Do you have any pets?",
+        "conversation": "8940213441884018897",
+        "emote": "LOVE",
+        "avatar": "media/a14771000.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:33:55.866Z"
+      },
+      "id": 45
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "no",
+        "date": "2018-10-31T13:34:02.067Z"
+      },
+      "response": {
+        "message": "Do you like animals?",
+        "conversation": "8940213441884018897",
+        "emote": "LOVE",
+        "avatar": "media/a14771000.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:34:02.470Z"
+      },
+      "id": 46
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "no",
+        "date": "2018-10-31T13:34:13.420Z"
+      },
+      "response": {
+        "message": "Why not?",
+        "conversation": "8940213441884018897",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:34:13.805Z"
+      },
+      "id": 47
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "because they are useless",
+        "date": "2018-10-31T13:34:25.259Z"
+      },
+      "response": {
+        "message": "Do you have a car?",
+        "conversation": "8940213441884018897",
+        "emote": "LOVE",
+        "avatar": "media/a14770996.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:34:25.667Z"
+      },
+      "id": 48
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "yes",
+        "date": "2018-10-31T13:34:34.984Z"
+      },
+      "response": {
+        "message": "What kind?",
+        "conversation": "8940213441884018897",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:34:35.370Z"
+      },
+      "id": 49
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "sedan, a small one. may I ask you a question?",
+        "date": "2018-10-31T13:34:58.749Z"
+      },
+      "response": {
+        "message": "I'm from Montreal, Canada.",
+        "conversation": "8940213441884018897",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-10-31T13:34:59.280Z"
+      },
+      "id": 50
     }
   ]
 }
