@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const BotLink = ({ bot, onSelect}) => {
     return (
 
-        <NavLink exact to={`/chat/${bot.id}`} className="no-underline">
+        <NavLink exact to={`/bot/${bot.id}`} className="no-underline">
             <li className="list-group-item bot-link">
                 <div className="media">
                     <img className="align-self-center mr-3 avatar-sm" src={bot.avatar} alt="avatar" />

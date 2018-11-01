@@ -38,6 +38,7 @@ export const storeState = {
     exchanges: {
         getAll: (state, botId) => botsState.getExchangesIds(state.bots, botId)
             .map(id => exchangesState.getExchange(state.exchanges, id)),
+        getLast: (state, botId) => exchangesState.getExchange(state.exchanges, botsState.getLastExchangeId(state.bots, botId))
     },
     ui: {
         bots: {

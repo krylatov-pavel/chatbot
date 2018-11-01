@@ -28,15 +28,16 @@ class Chat extends Component {
         const { botId, exchanges, sendMessage, conversationId, botName } = this.props;
         const {avatar, avatarType, defaultAvatar } = this.props;
 
-        return (<div className="chat-container">
-            <BotAvatar avatar={avatar} avatarType={avatarType} defaultAvatar={defaultAvatar} />
-            <div className="chat-content">
-                <Conversation exchanges={exchanges} botName={botName} />
+        return (
+            <div className="chat-container">
+                <div className="chat-content">
+                    <Conversation exchanges={exchanges} botName={botName} />
+                </div>
+                <div>
+                    <MessageBox onSend={(message) => sendMessage(botId, message, conversationId)} />
+                </div>
             </div>
-            <div>
-                <MessageBox onSend={(message) => sendMessage(botId, message, conversationId)} />
-            </div>
-        </div>);
+        );
     }
 }
 
@@ -44,13 +45,9 @@ const mapStateToProps = (state, ownProps) => {
     const { botId } = ownProps.match.params;
     const botData = storeState.bots.getData(state, botId);
     const exchanges = storeState.exchanges.getAll(state, botId);
-    const lastExchage = exchanges.length && exchanges[exchanges.length - 1];
-    
+
     return {
         exchanges,
-        avatar: lastExchage && lastExchage.response.avatar,
-        avatarType: lastExchage && lastExchage.response.avatarType,
-        defaultAvatar: botData && botData.avatar,
         conversationId: storeState.bots.getConversationId(state, botId),
         botId,
         botName: botData && botData.name

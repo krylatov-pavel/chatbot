@@ -33,4 +33,4 @@ const exchanges = (state = {}, action) => {
 
 export default exchanges;
 
-export const getExchange = (state, id) => state[id];
+export const getExchange = (state, id) => state[id] || null;

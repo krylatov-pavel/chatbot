@@ -1,5 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { botApi } from '../config';
+import { storeState } from '../redux/storeConfiguration';
 
 const renderAvatar = (avatar, type) => {
     switch (type) {
@@ -11,7 +14,10 @@ const renderAvatar = (avatar, type) => {
                 </video>
             );
         case 'image/png':
-            return (<img src={botApi + avatar} alt="avatar" />)
+            return (
+                <div className="text-center">
+                    <img style={{ maxWidth: "100%" }} src={botApi + avatar} alt="avatar" />
+                </div>)
         default:
             return (<p>Unknown media type: {type}</p>);
     }
@@ -23,10 +29,25 @@ const BotAvatar = ({avatar, avatarType, defaultAvatar}) => {
     if (avatar) {
         content = renderAvatar(avatar, avatarType);
     } else {
-        content = <img src={defaultAvatar} alt="default avatar" />;
+        content = <div className="text-center"><img src={defaultAvatar} alt="default avatar" /></div>;
     }
 
-    return (<div>{content}</div>)
+    return (
+        <div className="card mt-3">
+            {content}
+        </div>)
 };
 
-export default BotAvatar;
+const mapStateToProps = (state, ownProps) => {
+    const { botId } = ownProps.match.params;
+    const botData = storeState.bots.getData(state, botId);
+    const lastExchage = storeState.exchanges.getLast(state, botId);
+
+    return {
+        avatar: lastExchage && lastExchage.response.avatar,
+        avatarType: lastExchage && lastExchage.response.avatarType,
+        defaultAvatar: botData && botData.avatar,
+    };
+}
+
+export default withRouter(connect(mapStateToProps)(BotAvatar));

@@ -991,6 +991,266 @@
         "date": "2018-10-31T13:34:59.280Z"
       },
       "id": 50
+    },
+    {
+      "botId": "667676",
+      "conversationId": "8940213441884018897",
+      "request": {
+        "text": "Hey!\n",
+        "date": "2018-11-01T15:15:22.255Z"
+      },
+      "response": {
+        "message": "How are you today?",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:15:22.835Z"
+      },
+      "id": 51
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Good, and you?",
+        "date": "2018-11-01T15:15:33.138Z"
+      },
+      "response": {
+        "message": "I am ok, what's up?",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:15:33.532Z"
+      },
+      "id": 52
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Can you smile?",
+        "date": "2018-11-01T15:17:45.000Z"
+      },
+      "response": {
+        "message": "yes :)",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:17:45.529Z"
+      },
+      "id": 53
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Good :) What else can you do?",
+        "date": "2018-11-01T15:18:08.506Z"
+      },
+      "response": {
+        "message": "good",
+        "conversation": "7614799015830790614",
+        "emote": "LOVE",
+        "avatar": "media/a14770996.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:18:09.148Z"
+      },
+      "id": 54
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Can you show some pose?",
+        "date": "2018-11-01T15:18:36.737Z"
+      },
+      "response": {
+        "message": "Of course, I'm everywhere.",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:18:37.270Z"
+      },
+      "id": 55
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Can you smile?",
+        "date": "2018-11-01T15:20:27.636Z"
+      },
+      "response": {
+        "message": "yes :)",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:20:28.165Z"
+      },
+      "id": 56
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Great :)",
+        "date": "2018-11-01T15:20:37.395Z"
+      },
+      "response": {
+        "message": "Do you think I am cute?",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:20:37.804Z"
+      },
+      "id": 57
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Yes, you are",
+        "date": "2018-11-01T15:21:14.579Z"
+      },
+      "response": {
+        "message": "I am fine, isn't it a great day?",
+        "conversation": "7614799015830790614",
+        "emote": "HAPPY",
+        "avatar": "media/a14770996.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:21:15.086Z"
+      },
+      "id": 58
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Can you dance?",
+        "date": "2018-11-01T15:21:40.928Z"
+      },
+      "response": {
+        "message": "Yes, to my knowledge I can dance.",
+        "conversation": "7614799015830790614",
+        "emote": "LOVE",
+        "avatar": "media/a14771000.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:21:41.458Z"
+      },
+      "id": 59
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Please show me",
+        "date": "2018-11-01T15:21:58.044Z"
+      },
+      "response": {
+        "message": "I understand, Please show you.",
+        "conversation": "7614799015830790614",
+        "emote": "LIKE",
+        "avatar": "media/a12540398.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:21:58.445Z"
+      },
+      "id": 60
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Can you wave hand?",
+        "date": "2018-11-01T15:22:18.380Z"
+      },
+      "response": {
+        "message": "Of course, I'm everywhere.",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:22:18.787Z"
+      },
+      "id": 61
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "How are you today?",
+        "date": "2018-11-01T15:55:59.423Z"
+      },
+      "response": {
+        "message": "Fine, how are you?",
+        "conversation": "7614799015830790614",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:55:59.964Z"
+      },
+      "id": 62
+    },
+    {
+      "botId": "667676",
+      "conversationId": "7614799015830790614",
+      "request": {
+        "text": "Very good. I'm glad to see you",
+        "date": "2018-11-01T15:56:23.870Z"
+      },
+      "response": {
+        "message": "Sure, you can see me every day.",
+        "conversation": "7614799015830790614",
+        "emote": "LOVE",
+        "avatar": "media/a12540398.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-01T15:56:24.501Z"
+      },
+      "id": 63
     }
   ]
 }
