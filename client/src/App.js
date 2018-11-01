@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import BotsList from './components/BotsList';
 import Home from './components/Home';
 import Chat from './components/Chat';
+import BotDetails from './components/BotDetails';
 
 class App extends Component {
     render() {
@@ -16,10 +17,13 @@ class App extends Component {
                 <BrowserRouter>
                     <div className="container-fluid full-heigth">
                         <div className="row full-heigth">
-                            <nav className="col=12 col-md-3 bg-faded sidebar">
+                            <nav className="col-12 col-sm-3 col-lg-2 bg-faded full-heigth sidebar">
                                 <BotsList />
                             </nav>
-                            <main className="col-12 col-md-9 offset-md-3 full-heigth">
+                            <article className="col-12 col-sm-3 col-lg-2">
+                                <Route exact path="/chat/:botId" component={BotDetails} />
+                            </article>
+                            <main className="col-12 col-sm-6 col-lg-8 full-heigth">
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/chat/:botId" component={Chat} />
                             </main>

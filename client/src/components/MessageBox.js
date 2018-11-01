@@ -12,7 +12,6 @@ class MessageBox extends Component {
         onSend({
             text: model.text
         });
-        //formDispatch(actions.reset('message'));
     }
 
     render() {
