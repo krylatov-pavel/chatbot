@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { storeState } from '../redux/storeConfiguration';
 import MessageBox from './MessageBox';
 import Conversation from './Conversation';
+import BotAvatar from './BotAvatar';
 import { sendMessage, fetchExchanges } from '../redux/actionCreators/conversations';
 
 class Chat extends Component {
@@ -25,8 +26,10 @@ class Chat extends Component {
 
     render() {
         const { botId, exchanges, sendMessage, conversationId, botName } = this.props;
+        const {avatar, avatarType, defaultAvatar } = this.props;
 
         return (<div className="chat-container">
+            <BotAvatar avatar={avatar} avatarType={avatarType} defaultAvatar={defaultAvatar} />
             <div className="chat-content">
                 <Conversation exchanges={exchanges} botName={botName} />
             </div>
@@ -40,12 +43,17 @@ class Chat extends Component {
 const mapStateToProps = (state, ownProps) => {
     const { botId } = ownProps.match.params;
     const botData = storeState.bots.getData(state, botId);
-
+    const exchanges = storeState.exchanges.getAll(state, botId);
+    const lastExchage = exchanges.length && exchanges[exchanges.length - 1];
+    
     return {
-        exchanges: storeState.exchanges.getAll(state, botId),
+        exchanges,
+        avatar: lastExchage && lastExchage.response.avatar,
+        avatarType: lastExchage && lastExchage.response.avatarType,
+        defaultAvatar: botData && botData.avatar,
         conversationId: storeState.bots.getConversationId(state, botId),
         botId,
-        botName: botData ? botData.name : null
+        botName: botData && botData.name
     };
 };
 
