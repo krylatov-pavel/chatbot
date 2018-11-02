@@ -84,3 +84,23 @@ a.no-underline {
     .exchange .to .message-metadata {
         text-align: right;
     }
+
+
+.move-enter {
+  transform: translateX(-100%);
+  z-index: -1;
+}
+    .move-enter.move-enter-active {
+        transform: translateX(0);
+        transition: all 250ms ease-in;
+    }
+
+.move-exit {
+    transform: translateX(0);
+    z-index: -1;
+}
+
+.move-exit.move-exit-active {
+    transform: translateX(-100%);
+    transition: all 250ms ease-in;
+}
