@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { storeState } from '../redux/storeConfiguration';
 import MessageBox from './MessageBox';
 import Conversation from './Conversation';
-import BotAvatar from './BotAvatar';
 import { sendMessage, fetchExchanges } from '../redux/actionCreators/conversations';
 
 class Chat extends Component {
@@ -26,11 +25,10 @@ class Chat extends Component {
 
     render() {
         const { botId, exchanges, sendMessage, conversationId, botName } = this.props;
-        const {avatar, avatarType, defaultAvatar } = this.props;
 
         return (
             <div className="chat-container">
-                <div className="chat-content">
+                <div className="chat-content clearfix">
                     <Conversation exchanges={exchanges} botName={botName} />
                 </div>
                 <div>

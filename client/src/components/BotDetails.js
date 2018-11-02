@@ -19,8 +19,10 @@ const BotDetails = ({data, isFetching, error, botId}) => {
                 </div>
                 <div className="card-body">
                     <p className="mb-0"><b className="text-muted">Name:</b> {data.name}</p>
-                    <p className="mb-0"><b className="text-muted">Description: </b> <small>{data.description}</small></p>
-                    <NavLink to={`/chat/${botId}`} className="btn btn-primary">Start Chat</NavLink>
+                    <p><b className="text-muted">Description: </b> <small>{data.description}</small></p>
+                    <p className="mb-0 text-center">
+                        <NavLink to={`/chat/${botId}`} className="btn btn-primary">Start Chat</NavLink>
+                    </p>
                 </div>
             </div>
         );
