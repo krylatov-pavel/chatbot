@@ -33,7 +33,7 @@ const BotAvatar = ({avatar, avatarType, defaultAvatar}) => {
     }
 
     return (
-        <div className="card mt-3">
+        <div className="card no-border mt-3">
             {content}
         </div>)
 };

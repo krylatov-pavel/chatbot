@@ -7,10 +7,15 @@
     overflow-x: hidden;
     overflow-y: auto;
     border-right: 1px solid #eee;
+    z-index:1;
 }
 
 .bg-faded {
     background-color: #f7f7f7;
+}
+
+.no-border {
+    border: none;
 }
 
 a.no-underline {
@@ -87,20 +92,21 @@ a.no-underline {
 
 
 .move-enter {
-  transform: translateX(-100%);
-  z-index: -1;
+  transform: translateX(-110%);
+  position: absolute;
+  opacity: 0;
 }
-    .move-enter.move-enter-active {
-        transform: translateX(0);
-        transition: all 250ms ease-in;
-    }
+
+.move-enter-done {
+    transform: translateX(0);
+    transition: all 250ms ease-in;
+}
 
 .move-exit {
     transform: translateX(0);
-    z-index: -1;
 }
 
-.move-exit.move-exit-active {
-    transform: translateX(-100%);
-    transition: all 250ms ease-in;
+.move-exit-active {
+    transform: translateX(-110%);
+    transition: all 250ms ease-out;
 }

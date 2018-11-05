@@ -25,7 +25,7 @@ class App extends Component {
                                 </nav>
                                 <article className="col-12 col-sm-3 col-lg-2">
                                     <TransitionGroup>
-                                        <CSSTransition key={location.key} classNames="move" timeout={300}>
+                                        <CSSTransition key={location.pathname} classNames="move" timeout={250}>
                                             <Switch location={location}>
                                                 <Route path="/bot/:botId" component={BotDetails} />
                                                 <Route path="/chat/:botId" component={BotAvatar} />
