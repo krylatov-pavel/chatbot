@@ -14,13 +14,20 @@ class MessageBox extends Component {
         });
     }
 
+    subimOnEnterPress(e) {
+        if (e.keyCode == 13 && e.shiftKey == false) {
+            e.preventDefault();
+            this.formDispatch(actions.submit('message'));
+        }
+    }
+
     render() {
         return (
             <LocalForm model="message"
                 onSubmit={(model) => this.onSubmit(model)}
                 getDispatch={(dispatch) => this.attachDispatch(dispatch)}>
                 <div className="form-group">
-                    <Control.textarea rows="3" model=".text" className="form-control" />
+                    <Control.textarea rows="3" model=".text" className="form-control" onKeyDown={(event) => this.subimOnEnterPress(event)} />
                 </div>
                 <div className="form-group">
                     <button type="submit" className="btn btn-light float-right">Send</button>
