@@ -4,16 +4,18 @@ import { Provider } from 'react-redux';
 import { configureStore } from './redux/storeConfiguration';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { initializeIcons } from './components/utils/initializeIcons';
 import BotsList from './components/BotsList';
 import Home from './components/Home';
 import Chat from './components/Chat';
 import BotDetails from './components/BotDetails';
 import BotAvatar from './components/BotAvatar'
 
+const store = configureStore();
+initializeIcons();
+
 class App extends Component {
     render() {
-        const store = configureStore();
-
         return (
             <Provider store={store}>
                 <BrowserRouter>

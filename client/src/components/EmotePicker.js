@@ -1,5 +1,6 @@
 import React from 'react';
 import { EMOTION_TYPE } from './utils/emotionTypes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const EmotePicker = ({emote, onSelect}) => {
     const removeEmote = () => {
@@ -10,17 +11,17 @@ const EmotePicker = ({emote, onSelect}) => {
         onSelect(EMOTION_TYPE.HAPPY);
     };
 
-    const image = emote !== EMOTION_TYPE.NONE
-        ? <img src="/images/smile.png" alt="smile" />
-        : null;
-    const button = emote !== EMOTION_TYPE.NONE
-        ? <button type="button" onClick={removeEmote}>Remove</button>
-        : <button type="button" onClick={addEmote}>Add</button>
-
-    return (<div className="emote-picker">
-        {button}
-        {image}
-    </div>);
+    if (emote === EMOTION_TYPE.NONE) {
+        return (<div className="emote-picker">
+            <FontAwesomeIcon icon={['far', 'sad-tear']} size="lg" />
+        </div>)
+    } else {
+        return (
+            <div className="emote-picker">
+                asd
+                <FontAwesomeIcon icon={['far', 'sad-tear']} />
+        </div>)
+    };
 };
 
 export default EmotePicker;

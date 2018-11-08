@@ -1351,6 +1351,251 @@
         "date": "2018-11-02T13:55:23.655Z"
       },
       "id": 68
+    },
+    {
+      "botId": "165",
+      "conversationId": "7049931829898875676",
+      "request": {
+        "text": "Hello!",
+        "date": "2018-11-05T12:44:50.106Z"
+      },
+      "response": {
+        "message": "Hello, how are you?",
+        "conversation": "2669251508614705808",
+        "emote": "ANGER",
+        "avatar": "media/a22503791.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-05T12:44:50.670Z"
+      },
+      "id": 69
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "Great",
+        "date": "2018-11-05T12:45:20.884Z"
+      },
+      "response": {
+        "message": "Good.",
+        "conversation": "2669251508614705808",
+        "emote": "NONE",
+        "avatar": "media/a22503795.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-05T12:45:21.448Z"
+      },
+      "id": 70
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "Hello",
+        "date": "2018-11-06T15:00:48.499Z"
+      },
+      "response": {
+        "message": "Hello, how are you?",
+        "conversation": "2669251508614705808",
+        "emote": "ANGER",
+        "avatar": "media/a22503791.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T15:00:49.039Z"
+      },
+      "id": 71
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "date": "2018-11-06T15:17:30.048Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T15:17:30.633Z"
+      },
+      "id": 72
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "date": "2018-11-06T15:17:41.914Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T15:17:42.312Z"
+      },
+      "id": 73
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "HAPPY",
+        "date": "2018-11-06T16:02:34.179Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T16:02:34.743Z"
+      },
+      "id": 74
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "NONE",
+        "date": "2018-11-06T16:02:41.651Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T16:02:42.046Z"
+      },
+      "id": 75
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "HAPPY",
+        "date": "2018-11-06T16:03:46.697Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T16:03:47.239Z"
+      },
+      "id": 76
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "HAPPY",
+        "date": "2018-11-06T16:05:08.392Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T16:05:08.904Z"
+      },
+      "id": 77
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "NONE",
+        "date": "2018-11-06T16:06:06.596Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2669251508614705808",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-06T16:06:07.139Z"
+      },
+      "id": 78
+    },
+    {
+      "botId": "165",
+      "conversationId": "2669251508614705808",
+      "request": {
+        "text": "",
+        "emote": "NONE",
+        "date": "2018-11-08T13:01:47.235Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2468090728053818863",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-08T13:01:47.762Z"
+      },
+      "id": 79
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "",
+        "emote": "HAPPY",
+        "date": "2018-11-08T13:04:57.816Z"
+      },
+      "response": {
+        "message": "Hello human, what would you like to know?",
+        "conversation": "2468090728053818863",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-08T13:04:58.351Z"
+      },
+      "id": 80
     }
   ]
 }
