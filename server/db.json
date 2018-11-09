@@ -1678,6 +1678,89 @@
         "date": "2018-11-09T14:10:53.967Z"
       },
       "id": 84
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "how are you brain",
+        "date": "2018-11-09T15:25:17.600Z"
+      },
+      "response": {
+        "message": "I am fine.",
+        "conversation": "2468090728053818863",
+        "emote": "LOVE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T15:25:18.269Z"
+      },
+      "id": 85
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "doing all rocket science",
+        "emote": "",
+        "date": "2018-11-09T15:31:08.906Z"
+      },
+      "response": {
+        "message": "Science is the intellectual and practical activity encompassing the systematic study of the structure and behavior of the physical and natural world through observation and experiment.",
+        "conversation": "2468090728053818863",
+        "emote": "RAGE",
+        "avatar": "media/a22503791.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T15:31:09.661Z"
+      },
+      "id": 86
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "are you angry",
+        "emote": "",
+        "date": "2018-11-09T15:31:35.784Z"
+      },
+      "response": {
+        "message": "That's right, I am angry.",
+        "conversation": "2468090728053818863",
+        "emote": "RAGE",
+        "avatar": "media/a22503791.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T15:31:36.426Z"
+      },
+      "id": 87
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "why",
+        "emote": "",
+        "date": "2018-11-09T15:31:46.217Z"
+      },
+      "response": {
+        "message": "I am not sure why.  Don't you know?",
+        "conversation": "2468090728053818863",
+        "emote": "CONFIDENT",
+        "avatar": "media/a22225230.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T15:31:46.687Z"
+      },
+      "id": 88
     }
   ]
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { EMOTION_TYPE } from './utils/emotionTypes';
 import EmotePicker from './EmotePicker';
+import SpeechInput from './SpeechInput';
 
 class MessageBox extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class MessageBox extends Component {
         };
 
         this.onSubmit = this.onSubmit.bind(this);
+        this.onInput = this.onInput.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.subimOnEnterPress = this.subimOnEnterPress.bind(this);
         this.changeEmote = this.changeEmote.bind(this);
@@ -20,6 +22,12 @@ class MessageBox extends Component {
     handleChange(e) {
         this.setState({
             [e.target.name]: e.target.value
+        });
+    }
+
+    onInput(text) {
+        this.setState({
+            text
         });
     }
 
@@ -55,6 +63,7 @@ class MessageBox extends Component {
                         value={this.state.text}
                         onChange={this.handleChange}
                         onKeyDown={this.subimOnEnterPress} />
+                    <SpeechInput onInput={this.onInput} />
                     <EmotePicker emote={this.state.emote} onSelect={this.changeEmote} />
                 </div>
                 <div className="form-group">

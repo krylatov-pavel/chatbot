@@ -39,15 +39,15 @@ class EmotePicker extends Component {
 
         const emotions = Object.keys(EMOTION_TYPE).map(e => (
             <div className="emote-item text-center mb-1 mt-1" key={e}>
-                <FontAwesomeIcon icon={['far', getEmoteIcon(e)]} size="lg" onClick={() => this.selectEmote(e)} id={`tooltip-${e}`}/>
+                <FontAwesomeIcon className="icon-clickable" icon={['far', getEmoteIcon(e)]} size="lg" onClick={() => this.selectEmote(e)} id={`tooltip-${e}`} />
                 <UncontrolledTooltip placement="top" target={`tooltip-${e}`}>{e.toLowerCase()}</UncontrolledTooltip> 
             </div>
         ));
 
         return (<div className="emote-picker">
             <FontAwesomeIcon id="emotePicker" icon={['far', emote ? getEmoteIcon(emote) : 'meh']}
-                size="lg" onClick={this.toggleEmotePicker} className={`current-emote ${emote ? 'active' : ''}`} />
-            {emote ? <FontAwesomeIcon icon="times" size="xs" className="remove-emote-btn" onClick={this.removeEmote} /> : null}
+                size="lg" onClick={this.toggleEmotePicker} className={`icon-clickable current-emote ${emote ? 'active' : ''}`} />
+            {emote ? <FontAwesomeIcon icon="times" size="xs" className="icon-clickable remove-emote-btn" onClick={this.removeEmote} /> : null}
             <Popover placement="top" isOpen={this.state.emotePickerOpen} target="emotePicker"
                 toggle={this.toggleEmotePicker}>
                 <div className="emote-container">
