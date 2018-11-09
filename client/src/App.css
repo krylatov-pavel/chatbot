@@ -7,7 +7,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     border-right: 1px solid #eee;
-    z-index:1;
+    z-index: 1;
 }
 
 .bg-faded {
@@ -92,9 +92,9 @@ a.no-underline {
 
 
 .move-enter {
-  transform: translateX(-110%);
-  position: absolute;
-  opacity: 0;
+    transform: translateX(-110%);
+    position: absolute;
+    opacity: 0;
 }
 
 .move-enter-done {
@@ -115,9 +115,52 @@ a.no-underline {
     position: relative;
 }
 
-.message-editor .emote-picker {
+    .message-editor .emote-picker {
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        color: dimgray;
+    }
+
+.emote-picker .current-emote {
     position: absolute;
-    z-index: 1;
-    top: 10px;
-    right: 10px;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
 }
+
+.emote-picker .remove-emote-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.emote-picker .current-emote:hover,
+.emote-picker .remove-emote-btn:hover {
+    color: black;
+}
+
+.message-editor .emote-picker .active {
+    color: darkorange;
+}
+
+.emote-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 140px;
+}
+
+    .emote-container .emote-item {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 20%;
+    }
+
+        .emote-container .emote-item:hover {
+            color: darkorange;
+        }

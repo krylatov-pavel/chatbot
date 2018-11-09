@@ -34,6 +34,10 @@ class MessageBox extends Component {
 
         const { onSend } = this.props;
         onSend(this.state);
+        this.setState({
+            text: '',
+            emote: ''
+        });
     }
 
     subimOnEnterPress(e) {

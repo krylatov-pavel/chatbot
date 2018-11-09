@@ -1,27 +1,60 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { EMOTION_TYPE } from './utils/emotionTypes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { EMOTE_ICON } from './utils/emotionTypes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Popover } from 'reactstrap';
 
-const EmotePicker = ({emote, onSelect}) => {
-    const removeEmote = () => {
-        onSelect(EMOTION_TYPE.NONE);
+class EmotePicker extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            emotePickerOpen: false
+        };
+
+        this.removeEmote = this.removeEmote.bind(this);
+        this.addEmote = this.selectEmote.bind(this);
+        this.toggleEmotePicker = this.toggleEmotePicker.bind(this);
+    }
+
+    toggleEmotePicker() {
+        this.setState({
+            emotePickerOpen: !this.state.emotePickerOpen
+        });
+    }
+
+    removeEmote() {
+        const {onSelect} = this.props;
+        onSelect('');
     };
 
-    const addEmote = () => {
-        onSelect(EMOTION_TYPE.HAPPY);
+    selectEmote(emote) {
+        const {onSelect} = this.props;
+        onSelect(emote);
+        this.toggleEmotePicker();
     };
 
-    if (emote === EMOTION_TYPE.NONE) {
+    render() {
+        const {emote} = this.props;
+
+        const emotions = Object.keys(EMOTION_TYPE).map(e => (
+            <div className="emote-item text-center mb-1 mt-1" key={e}>
+                <FontAwesomeIcon icon={['far', EMOTE_ICON[e]]} size="lg" onClick={() => this.selectEmote(e)} />
+            </div>
+        ));
+
         return (<div className="emote-picker">
-            <FontAwesomeIcon icon={['far', 'sad-tear']} size="lg" />
+            <FontAwesomeIcon id="emotePicker" icon={['far', emote ? EMOTE_ICON[emote] : 'meh']}
+                size="lg" onClick={this.toggleEmotePicker} className={`current-emote ${emote ? 'active' : ''}`} />
+            {emote ? <FontAwesomeIcon icon="times" size="xs" className="remove-emote-btn" onClick={this.removeEmote} /> : null}
+            <Popover placement="top" isOpen={this.state.emotePickerOpen} target="emotePicker"
+                toggle={this.toggleEmotePicker}>
+                <div className="emote-container">
+                    {emotions}
+                </div>
+            </Popover>
         </div>)
-    } else {
-        return (
-            <div className="emote-picker">
-                asd
-                <FontAwesomeIcon icon={['far', 'sad-tear']} />
-        </div>)
-    };
+    }
 };
 
 export default EmotePicker;

@@ -1596,6 +1596,68 @@
         "date": "2018-11-08T13:04:58.351Z"
       },
       "id": 80
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "Hi Robot!",
+        "emote": "CONFIDENT",
+        "date": "2018-11-09T11:29:46.278Z"
+      },
+      "response": {
+        "message": "how r u",
+        "conversation": "2468090728053818863",
+        "emote": "SAD",
+        "avatar": "media/a22503812.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T11:29:46.967Z"
+      },
+      "id": 81
+    },
+    {
+      "botId": "667676",
+      "conversationId": "6131510107771578685",
+      "request": {
+        "text": "What is your name?",
+        "date": "2018-11-09T11:30:14.183Z"
+      },
+      "response": {
+        "message": "My name is Julie.",
+        "conversation": "3919485209066415766",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-09T11:30:14.761Z"
+      },
+      "id": 82
+    },
+    {
+      "botId": "667676",
+      "conversationId": "3919485209066415766",
+      "request": {
+        "text": "You look beautiful today",
+        "emote": "LOVE",
+        "date": "2018-11-09T13:18:24.280Z"
+      },
+      "response": {
+        "message": "I understand, I look beautiful today.",
+        "conversation": "3919485209066415766",
+        "emote": "NONE",
+        "avatar": "media/a12540386.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a12540390.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a12546662.png",
+        "date": "2018-11-09T13:18:24.873Z"
+      },
+      "id": 83
     }
   ]
 }

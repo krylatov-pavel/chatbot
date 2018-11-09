@@ -1,85 +1,45 @@
 export const EMOTION_TYPE = {
-    NONE: {
-        name: 'NONE'
-    },
-    LOVE: {
-        name: 'LOVE',
-        icon: 'grin-hearts'
-    },
-    LIKE: {
-        name: 'LIKE',
-        icon: 'smile'
-    },
-    DISLIKE: {
-        name: 'DISLIKE',
-        icon: 'frown'
-    },
-    HATE: {
-        name: 'HATE',
-        icon: 'tired'
-    },
-    RAGE: {
-        name: 'RAGE',
-        icon: 'grimace'
-    },
-    ANGER: {
-        name: 'ANGER',
-        icon: 'angry'
-    },
-    CALM: {
-        name: 'CALM',
-        icon: 'smile-beam'
-    },
-    SERENE: {
-        name: 'SERENE',
-        icon: 'meh-blank'
-    },
-    ECSTATIC: {
-        name: 'ECSTATIC',
-        icon: 'grin-stars'
-    },
-    HAPPY: {
-        name: 'HAPPY',
-        icon: 'grin'
-    },
-    SAD: {
-        name: 'SAD',
-        icon: 'sad-tear'
-    },
-    CRYING: {
-        name: 'CRYING',
-        icon: 'sad-cry'
-    },
-    PANIC: {
-        name: 'PANIC',
-        icon: 'dizzy'
-    },
-    AFRAID: {
-        name: 'AFRAID',
-        icon: 'flushed'
-    },
-    CONFIDENT: {
-        name: 'CONFIDENT',
-        icon: 'grin-wink'
-    },
-    COURAGEOUS: {
-        name: 'COURAGEOUS',
-        icon: 'grin-tongue'
-    },
-    SURPRISE: {
-        name: 'SURPRISE',
-        icon: 'surprise'
-    },
-    BORED: {
-        name: 'BORED',
-        icon: 'meh-rolling-eyes'
-    },
-    LAUGHTER: {
-        name: 'LAUGHTER',
-        icon: 'laugh'
-    },
-    SERIOUS: {
-        name: 'SERIOUS',
-        icon: 'meh'
-    }
+    LOVE: 'LOVE',
+    LIKE: 'LIKE',
+    DISLIKE: 'DISLIKE',
+    HATE: 'HATE',
+    RAGE: 'RAGE',
+    ANGER: 'ANGER',
+    CALM: 'CALM',
+    SERENE: 'SERENE',
+    ECSTATIC: 'ECSTATIC',
+    HAPPY: 'HAPPY',
+    SAD: 'SAD',
+    CRYING: 'CRYING',
+    PANIC: 'PANIC',
+    AFRAID: 'AFRAID',
+    CONFIDENT: 'CONFIDENT',
+    COURAGEOUS: 'COURAGEOUS',
+    SURPRISE: 'SURPRISE',
+    BORED: 'BORED',
+    LAUGHTER: 'LAUGHTER',
+    SERIOUS: 'SERIOUS'
+};
+
+export const EMOTE_ICON = {
+    [EMOTION_TYPE.LOVE]: 'grin-hearts',
+    [EMOTION_TYPE.LIKE]: 'smile',
+    [EMOTION_TYPE.DISLIKE]: 'frown',
+    [EMOTION_TYPE.HATE]: 'tired',
+    [EMOTION_TYPE.RAGE]: 'grimace',
+    [EMOTION_TYPE.ANGER]: 'angry',
+    [EMOTION_TYPE.CALM]: 'smile-beam',
+    [EMOTION_TYPE.SERENE]: 'meh-blank',
+    [EMOTION_TYPE.ECSTATIC]: 'grin-stars',
+    [EMOTION_TYPE.HAPPY]: 'grin',
+    [EMOTION_TYPE.SAD]: 'sad-tear',
+    [EMOTION_TYPE.CRYING]: 'sad-cry',
+    [EMOTION_TYPE.PANIC]: 'dizzy',
+    [EMOTION_TYPE.AFRAID]: 'flushed',
+    [EMOTION_TYPE.CONFIDENT]: 'grin-wink',
+    [EMOTION_TYPE.COURAGEOUS]: 'grin-tongue',
+    [EMOTION_TYPE.SURPRISE]: 'surprise',
+    [EMOTION_TYPE.BORED]: 'meh-rolling-eyes',
+    [EMOTION_TYPE.LAUGHTER]: 'laugh',
+    [EMOTION_TYPE.SERIOUS]: 'meh'
 };
