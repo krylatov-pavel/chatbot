@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MessageDate from './MessageDate';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { getEmoteIcon } from './utils/emotionTypes';
 
 class Conversation extends Component {
     scrollToBottom = () => {
@@ -20,14 +22,22 @@ class Conversation extends Component {
                         <MessageDate dateString={exchange.request.date} />
                     </span>
                     <div className="message">
-                        {exchange.request.text}
+                        <span>{exchange.request.text} </span>
+                        {
+                            exchange.request.emote && exchange.request.emote != 'NONE'
+                                ? <FontAwesomeIcon icon={['far', getEmoteIcon(exchange.request.emote)]} className="darkorange" />
+                                : null
+                        }
                     </div>
                 </div>
                 <div className="to">
                     <span className="message-metadata">
                         <b>{botName}:</b> <MessageDate dateString={exchange.response.date} />
                     </span>
-                    <div className="message">{exchange.response.message}</div>
+                    <div className="message">
+                        <span>{exchange.response.message} </span>
+                        {exchange.response.emote !== 'NONE' ? <FontAwesomeIcon icon={['far', getEmoteIcon(exchange.response.emote)]} className="darkorange" /> : null}
+                    </div>
                 </div>
             </li>);
 

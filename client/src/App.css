@@ -164,3 +164,7 @@ a.no-underline {
         .emote-container .emote-item:hover {
             color: darkorange;
         }
+
+.darkorange {
+    color: darkorange;
+}

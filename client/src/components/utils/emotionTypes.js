@@ -21,7 +21,7 @@ export const EMOTION_TYPE = {
     SERIOUS: 'SERIOUS'
 };
 
-export const EMOTE_ICON = {
+const EMOTION_ICON = {
     [EMOTION_TYPE.LOVE]: 'grin-hearts',
     [EMOTION_TYPE.LIKE]: 'smile',
     [EMOTION_TYPE.DISLIKE]: 'frown',
@@ -42,4 +42,14 @@ export const EMOTE_ICON = {
     [EMOTION_TYPE.BORED]: 'meh-rolling-eyes',
     [EMOTION_TYPE.LAUGHTER]: 'laugh',
     [EMOTION_TYPE.SERIOUS]: 'meh'
+};
+
+export const getEmoteIcon = (emote) => {
+    const icon = EMOTION_ICON[emote];
+
+    if (!icon) {
+        console.warn(`icon for ${emote} not found.`);
+    }
+
+    return icon;
 };

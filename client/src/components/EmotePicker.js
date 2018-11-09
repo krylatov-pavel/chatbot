@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { EMOTION_TYPE } from './utils/emotionTypes';
-import { EMOTE_ICON } from './utils/emotionTypes';
+import { getEmoteIcon } from './utils/emotionTypes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Popover } from 'reactstrap';
+import { Popover, UncontrolledTooltip } from 'reactstrap';
 
 class EmotePicker extends Component {
     constructor(props) {
@@ -39,12 +39,13 @@ class EmotePicker extends Component {
 
         const emotions = Object.keys(EMOTION_TYPE).map(e => (
             <div className="emote-item text-center mb-1 mt-1" key={e}>
-                <FontAwesomeIcon icon={['far', EMOTE_ICON[e]]} size="lg" onClick={() => this.selectEmote(e)} />
+                <FontAwesomeIcon icon={['far', getEmoteIcon(e)]} size="lg" onClick={() => this.selectEmote(e)} id={`tooltip-${e}`}/>
+                <UncontrolledTooltip placement="top" target={`tooltip-${e}`}>{e.toLowerCase()}</UncontrolledTooltip> 
             </div>
         ));
 
         return (<div className="emote-picker">
-            <FontAwesomeIcon id="emotePicker" icon={['far', emote ? EMOTE_ICON[emote] : 'meh']}
+            <FontAwesomeIcon id="emotePicker" icon={['far', emote ? getEmoteIcon(emote) : 'meh']}
                 size="lg" onClick={this.toggleEmotePicker} className={`current-emote ${emote ? 'active' : ''}`} />
             {emote ? <FontAwesomeIcon icon="times" size="xs" className="remove-emote-btn" onClick={this.removeEmote} /> : null}
             <Popover placement="top" isOpen={this.state.emotePickerOpen} target="emotePicker"

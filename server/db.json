@@ -1658,6 +1658,26 @@
         "date": "2018-11-09T13:18:24.873Z"
       },
       "id": 83
+    },
+    {
+      "botId": "165",
+      "conversationId": "2468090728053818863",
+      "request": {
+        "text": "Are you smart?",
+        "date": "2018-11-09T14:10:53.269Z"
+      },
+      "response": {
+        "message": "Yes, I am smart.",
+        "conversation": "2468090728053818863",
+        "emote": "LIKE",
+        "avatar": "media/a22503805.mp4",
+        "avatarType": "video/mp4",
+        "avatarTalk": "media/a22225234.mp4",
+        "avatarTalkType": "video/mp4",
+        "avatarBackground": "media/a22225227.png",
+        "date": "2018-11-09T14:10:53.967Z"
+      },
+      "id": 84
     }
   ]
 }
